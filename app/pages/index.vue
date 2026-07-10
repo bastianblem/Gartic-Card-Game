@@ -29,6 +29,10 @@
           @click="selectEmoji"
         />
       </div>
+
+      <div>
+        <ArtistsCanvas />
+      </div>
     </div>
   </div>
 </template>
@@ -37,6 +41,7 @@
 import { ref, onMounted } from "vue";
 import { getRandomEmojis } from "~/data/emojiPool";
 import EmojiCard from "~/components/cards/EmojiCard.vue";
+import ArtistsCanvas from "~/components/cards/ArtistsCanvas.vue";
 
 const activeEmojisPerRound = ref<string[]>([]);
 

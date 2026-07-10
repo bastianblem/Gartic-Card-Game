@@ -21,6 +21,7 @@
 <script setup lang="ts">
 const navLinks = [
   { label: "Classic", to: "/" },
+  { label: "Category", to: "/category" },
   { label: "Rapidfire", to: "/rapidfire" },
 ];
 </script>
