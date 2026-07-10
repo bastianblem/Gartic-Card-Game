@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@theme {
+  /* Tiefes, kosmisches Dunkelblau für den Hintergrund (besser als reines Schwarz) */
+  --color-slate-900: #0a0f1d;
+  --color-slate-800: #131a30;
+  --color-slate-700: #1e294b;
+
+  /* Die Neon-Branding-Farben für dein Game */
+  --color-brand-neon: #00f5ff; /* Electric Cyan (z.B. für Timer) */
+  --color-brand-primary: #6366f1; /* Cyber Indigo (Standard Buttons & Aktiv-Zustände) */
+  --color-brand-success: #39ff14; /* Neon Grün (Richtige Emojis / Volltreffer) */
+  --color-brand-danger: #ff007f; /* Cyber Rose / Neon Pink (Falsche Emojis / Countdown-Stress) */
+
+  /* Custom Glow-Effekte für das UI (Box-Shadows) */
+  --shadow-glow-cyan: 0 0 15px rgba(0, 245, 255, 0.3);
+  --shadow-glow-indigo: 0 0 20px rgba(99, 102, 241, 0.4);
+  --shadow-glow-green: 0 0 20px rgba(57, 255, 20, 0.4);
+  --shadow-glow-pink: 0 0 20px rgba(255, 0, 127, 0.4);
+
+  /* Ein cooler Font-Family-Zusatz für den Arcade-Vibe */
+  --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+}
+
+/* Ein kleiner globaler Style-Fix für den Body, damit das Theme knallt */
+body {
+  background-color: var(--color-slate-900);
+  color: #ffffff;
+  font-family: var(--font-display);
+  overflow-x: hidden;
+}

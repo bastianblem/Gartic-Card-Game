@@ -1,12 +1,12 @@
 <template>
   <!-- outer container -->
-  <div>
+  <div class="flex flex-col mt-8">
     <!-- container within -->
-    <div>
+    <div class="flex flex-col gap-6">
       <!-- Header -->
-      <div>
-        <div>
-          <h1>Classic Mode</h1>
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4">
+          <h1 class="text-brand-neon font-bold text-5xl">Classic Mode</h1>
           <p>
             Choose the 4 correct cards that the artist has and is drawing for
             you to guess them correctly.
@@ -14,7 +14,7 @@
         </div>
         <button
           @click="startNewRound"
-          class="px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-400 active:bg-indigo-700 font-medium transition-colors shadow-lg shadow-indigo-600/20"
+          class="px-4 py-2 rounded-xl bg-brand-primary/80 hover:bg-brand-primary/60 active:bg-brand-primary font-medium transition-colors shadow-lg shadow-bg-brand-primary/20"
         >
           🔄New Cards
         </button>
